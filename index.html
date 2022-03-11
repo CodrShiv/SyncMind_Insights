@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SyncMind Insights - A visual representation of a Computer's Usage Logs">
+    <title>SyncMind Insights</title>
+    <link href="assets/styles/nice-select2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js" defer></script>
+    <script src="assets/scripts/nice-select2.js" defer></script>
+    <script src="controllers/index.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="root" class="container">
+        <header class="container">
+            <img width="214" height="75" src="assets/logo.svg" alt="SyncMind Insights Logo">
+        </header>
+        <main>
+            <div class="insight container" title="Usage Time (s)" id="day_time">
+                <div class="chart_header">
+                    <div class="select_block">
+                        <label for="day_time_select">Choose Category</label>
+                        <select class="cat_select" name="day_time_select" id="day_time_select"></select>
+                    </div>
+                    <h1>Daily Usage Time (Category)</h1>
+                </div>
+                <div class="chart_container">
+                    <canvas class="chart" id="day_time_chart"></canvas>
+                </div>
+            </div>
+            <div class="insight container" title="Frequency of Use" id="day_freq">
+                <div class="chart_header">
+                    <div class="select_block">
+                        <label for="day_freq_select">Choose Category</label>
+                        <select class="cat_select" name="day_freq_select" id="day_freq_select"></select>
+                    </div>
+                    <h1>Daily Usage Frequency (Category)</h1>
+                </div>
+                <div class="chart_container">
+                    <canvas class="chart" id="day_freq_chart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>

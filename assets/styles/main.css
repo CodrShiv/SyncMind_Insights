@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hind Siliguri", sans-serif;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0.35rem;
+  height: 0.35rem;
+  margin-bottom: 1rem;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #d8f3fe #e1a1ff;
+}
+::-webkit-scrollbar-track {
+  background: #d8f3fe;
+}
+::-webkit-scrollbar-thumb {
+  background-color:#e1a1ff;
+  border-radius: 0.25rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background: inherit;
+  color: inherit;
+}
+body {
+  overflow-x: hidden;
+  max-width: 65rem;
+  margin: 1rem auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.insight {
+  background-color: #fff;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 400ms;
+}
+.insight:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+}
+h1 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+main {
+  padding: 2rem 0;
+  align-self: stretch;
+  width: 100%;
+}
+.insight:nth-child(2) {
+  margin-top: 2.5rem;
+}
+.chart_container {
+  width: 100%;
+  align-self: stretch;
+}
+.chart_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  padding: 0.5rem 1rem;
+}
+.select_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+}
+label {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
